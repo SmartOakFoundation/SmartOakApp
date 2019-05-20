@@ -3,21 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmartOakApp.BloodDonationPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Blood Donation"
-                VerticalOptions="Center" 
-                HorizontalOptions="CenterAndExpand" />
+
             <ListView x:Name="MainListView"
                       HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
+                        <ViewCell>
                         <StackLayout Orientation="Vertical">
                             <Label Text="{Binding Amount}"/>
                             <Label Text="{Binding Date}"/>
                         </StackLayout>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-        </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>
