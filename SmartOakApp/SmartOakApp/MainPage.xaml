@@ -8,7 +8,11 @@
         <!-- Place new controls here -->
         <Label Text="Welcome to Xamarin.Forms!" 
            HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+           VerticalOptions="Center" />
+        <Button Text="Blood Donation" 
+           HorizontalOptions="Center"
+           VerticalOptions="Center"
+           Clicked="DonationPageLoad"/>
     </StackLayout>
 
 </ContentPage>

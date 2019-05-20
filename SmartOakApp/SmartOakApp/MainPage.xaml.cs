@@ -13,5 +13,10 @@ namespace SmartOakApp
         {
             InitializeComponent();
         }
+
+        private async void DonationPageLoad(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BloodDonationPage());
+        }
     }
 }
