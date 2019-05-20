@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SmartOakApp.BloodDonation
 {
-    class BloodEntry
+    public class BloodEntry
     {
         private int _amount;
         private DateTime _date;

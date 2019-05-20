@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SmartOakApp.BloodDonation;
+using SmartOakApp.BloodDonationDataSource;
 namespace SmartOakApp
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
@@ -15,6 +16,8 @@ namespace SmartOakApp
 		public BloodDonationPage ()
 		{
 			InitializeComponent ();
+            Data data = new Data();
+            MainListView.ItemsSource = data.Entries();
 		}
 	}
 }

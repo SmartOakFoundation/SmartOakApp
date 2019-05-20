@@ -5,8 +5,19 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Blood Donation"
-                VerticalOptions="CenterAndExpand" 
+                VerticalOptions="Center" 
                 HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="MainListView"
+                      HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="{Binding Amount}"/>
+                            <Label Text="{Binding Date}"/>
+                        </StackLayout>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
